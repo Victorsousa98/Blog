@@ -2,3 +2,5 @@ express
 express-handlebars
 body-parser
 mongoose
+
+bootstrap

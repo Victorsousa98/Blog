@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();//Router é um middleware que permite que você crie rotas para sua aplicação.
 
 router.get('/', (req, res) => {
-    res.send('Página inicial do admin');
+    res.render('admin/index');
 });
 
 router.get('/posts', (req, res) => {
@@ -10,7 +10,15 @@ router.get('/posts', (req, res) => {
 });
 
 router.get("/categorias", (req, res) => {
-    res.send("Página de categorias do admin");
+    res.render("admin/categorias");
+});
+
+router.get("/categorias/add", (req, res) => {
+    res.render("admin/addcategoria");
+});
+
+router.post("/categorias/nova", (req, res) => {
+    res.send("Recebendo dados da categoria: " + req.body.nome);
 });
 
 
