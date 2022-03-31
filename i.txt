@@ -4,3 +4,6 @@ body-parser
 mongoose
 
 bootstrap
+
+express-session
+connect-flash   

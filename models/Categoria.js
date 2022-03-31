@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -16,4 +17,4 @@ const CategoriaSchema = new Schema({
     }
 });
 
-mongoose.model('Categoria', CategoriaSchema);
+module.exports = mongoose.model('Categoria', CategoriaSchema);
